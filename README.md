@@ -1,7 +1,7 @@
 # Project Documentation
 
 ## Education Unlimited
-Open [http://localhost:3000] to view Live site in your browser.
+Open [https://education-unlimited-7607f.web.app/] to view Live site in your browser.
 
 * React
 * React-Hooks
