@@ -15,13 +15,16 @@ const LeftSide = () => {
 
     return (
         <div>
-            <h1>All Course : {courses.length}</h1>
+            <h1 className="text-3xl font-semibold bg-sky-300 text-center rounded-lg p-6">All Course : {courses.length}</h1>
 
             <div>
                 {
-                    courses.map(course => <p key={course.id}>
-                        <Link to={`course/${course.id}`}>{course.title}</Link>
-                    </p>)
+                    courses.map(course => <Link to={`course/${course.id}`} key={course.id}><p
+                        className="text-2xl font-semibold hover:bg-sky-200 rounded-lg p-3 m-4">
+                        {course.title}
+                    </p></Link>
+
+                    )
                 }
             </div>
         </div>

@@ -1,9 +1,42 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthProvider';
 
 const Login = () => {
+    const { user, signIn } = useContext(AuthContext);
+    const location = useLocation();
+
+    const navigates = useNavigate();
+    const from = location.state?.from?.pathname || '/';
+
+    const handleOnSubmit = event => {
+        event.preventDefault();
+
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+
+        signIn(email, password)
+            .then(result => {
+
+                form.reset();
+            })
+            .catch(error => {
+                console.error(error);
+            })
+
+
+    }
+
+    useEffect(() => {
+        if (user) {
+            navigates(from, { replace: true })
+        }
+    }, [user])
     return (
         <div>
-            <form className='w-80 mx-auto'>
+            <form className='w-80 mx-auto' onSubmit={handleOnSubmit}>
                 <div className="mb-6">
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
                     <input type="email" id="email" name='email' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Your Email" required />
