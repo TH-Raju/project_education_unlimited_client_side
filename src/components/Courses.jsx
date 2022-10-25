@@ -5,7 +5,7 @@ import LeftSide from './Shared/LeftSide';
 const Courses = () => {
     return (
 
-        <div className='grid grid-cols-3 gap-2 '>
+        <div className='grid grid-cols-3 gap-2 sm:mt-20'>
             <div className='bg-gray-200'>
                 <LeftSide></LeftSide>
             </div>

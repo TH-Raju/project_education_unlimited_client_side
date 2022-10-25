@@ -14,9 +14,8 @@ const LeftSide = () => {
     }, [])
 
     return (
-        <div>
-            <h1 className="text-3xl font-semibold bg-sky-300 text-center rounded-lg p-6">All Course : {courses.length}</h1>
-
+        <div >
+            <h1 className="text-3xl font-semibold bg-sky-300 text-center rounded-lg p-6">{courses.length} Course <p><small className='text-sm'>choose any course</small></p> </h1>
             <div>
                 {
                     courses.map(course => <Link to={`course/${course.id}`} key={course.id}><p
