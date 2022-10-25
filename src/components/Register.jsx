@@ -12,7 +12,9 @@ const Register = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        const name = form.name.value;
+        const photo = form.photoUrl.value;
+        // console.log(email, password);
 
         createUser(email, password)
             .then(result => {
@@ -22,10 +24,10 @@ const Register = () => {
             })
             .catch(error => {
                 console.log(error);
-            })
-
+            });
 
     }
+
     return (
         <div>
             <form className='w-80 mx-auto' onSubmit={handleSubmit}>
@@ -34,7 +36,7 @@ const Register = () => {
                     <input type="name" id="name" name='name' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Your Name" required />
                 </div>
                 <div className="mb-6">
-                    <label htmlFor="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                    <label htmlFor="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Photo URL</label>
                     <input type="text" id="text" name='photoUrl' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Photo URL" required />
                 </div>
                 <div className="mb-6">
