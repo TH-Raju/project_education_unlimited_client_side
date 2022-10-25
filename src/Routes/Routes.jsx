@@ -28,12 +28,12 @@ export const routes = createBrowserRouter([
                 children: [
                     {
                         path: '/courses',
-                        loader: () => fetch('http://localhost:5000/courses'),
+                        loader: () => fetch('https://education-unlimited-server-side.vercel.app/courses'),
                         element: <Course></Course>
                     },
                     {
                         path: '/courses/course/:id',
-                        loader: ({ params }) => fetch(`http://localhost:5000/courses/${params.id}`),
+                        loader: ({ params }) => fetch(`https://education-unlimited-server-side.vercel.app/courses/${params.id}`),
                         element: <Course></Course>
                     }
                 ]
