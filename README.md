@@ -1,3 +1,16 @@
+# Project Documentation
+
+## Education Unlimited
+Open [http://localhost:3000] to view Live site in your browser.
+
+* React
+* React-Hooks
+* flowbite css framework
+* Firebase
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
