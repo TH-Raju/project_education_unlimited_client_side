@@ -2,8 +2,9 @@
 
 # Website Name - Education Unlimited
 
-# Live Preview
-Open [https://education-unlimited-7607f.web.app/] to view Live site in your browser.
+# Live Preview  [https://education-unlimited-7607f.web.app/]  
+## click on the link to view Live site in your browser.
+
 
 # Website's different features and functionality
 * This is a Learning platform. Where You can learn various types of programming languages.
