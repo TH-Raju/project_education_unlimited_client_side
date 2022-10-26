@@ -9,7 +9,7 @@ const Courses = () => {
             <div className='bg-gray-200'>
                 <LeftSide></LeftSide>
             </div>
-            <div className='col-span-2 bg-gray-200'>
+            <div className='col-span-2 '>
                 <Outlet></Outlet>
             </div>
         </div>
