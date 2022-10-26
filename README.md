@@ -4,9 +4,12 @@
 Open [https://education-unlimited-7607f.web.app/] to view Live site in your browser.
 
 * React
-* React-Hooks
-* flowbite css framework
+* Tailwind CSS
+* flowbite
+* Memba UI
 * Firebase
+* Vercel
+
 
 
 
