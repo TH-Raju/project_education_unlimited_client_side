@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Blog from "../components/Blog";
 import Course from "../components/Course";
 import Courses from "../components/Courses";
+import Detail from "../components/Detail";
 import ErrorPage from "../components/ErrorPage";
 import FAQ from "../components/FAQ";
 import Home from "../components/Home";
@@ -38,6 +39,11 @@ export const routes = createBrowserRouter([
                         element: <Course></Course>
                     }
                 ]
+            },
+            {
+                path: '/detail/:id',
+                loader: ({ params }) => fetch(`https://education-unlimited-server-side.vercel.app/courses/${params.id}`),
+                element: <Detail></Detail>
             },
             {
                 path: '/blog',
