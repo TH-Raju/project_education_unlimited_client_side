@@ -7,6 +7,7 @@ import ErrorPage from "../components/ErrorPage";
 import FAQ from "../components/FAQ";
 import Home from "../components/Home";
 import Login from "../components/Login";
+import Premium from "../components/Premium";
 import Register from "../components/Register";
 import Main from "../layout/Main";
 
@@ -48,6 +49,11 @@ export const routes = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/premium/:id',
+                loader: ({ params }) => fetch(`https://education-unlimited-server-side.vercel.app/courses/${params.id}`),
+                element: <Premium></Premium>
             },
             {
                 path: '/faq',
