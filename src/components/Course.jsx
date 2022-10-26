@@ -6,7 +6,7 @@ const Course = () => {
     const { title, body, img } = cours;
     console.log(cours);
     return (
-        <div>
+        <div >
             <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{title} Tutorial</h1>
             {
                 body ?
@@ -19,6 +19,9 @@ const Course = () => {
                         <p className='text-center text-blue-800'> <span className='text-3xl align-middle'>← </span> Select any Course first</p>
                     </>
             }
+            <div className='text-center'>
+                <button className="outline outline-offset-2 outline-cyan-500 hover:bg-cyan-300 hover:outline-none rounded-md px-8 py-1 font-semibold text-xl">Detail</button>
+            </div>
         </div>
     );
 };

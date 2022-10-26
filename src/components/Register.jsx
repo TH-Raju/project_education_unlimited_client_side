@@ -39,7 +39,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className='lg:mx-32 md:mx-10'>
             <form className='w-80 mx-auto' onSubmit={handleSubmit}>
                 <div className="mb-6">
                     <label htmlFor="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name</label>
