@@ -1,6 +1,8 @@
 # Project Documentation
 
-## Education Unlimited
+# Website Name - Education Unlimited
+
+# Live Preview
 Open [https://education-unlimited-7607f.web.app/] to view Live site in your browser.
 
 # Website's different features and functionality
