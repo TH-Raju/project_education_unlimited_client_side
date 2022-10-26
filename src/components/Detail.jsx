@@ -72,10 +72,10 @@ const Detail = () => {
 
             <div className='text-center'>
                 <Link to='/courses'>
-                    <button className="outline outline-offset-2 hover:outline-offset-1 outline-cyan-500 hover:bg-cyan-300 rounded-md px-8 py-1 font-semibold text-xl mr-3"><span className='flex justify-center gap-3 align-middle'><FaArrowLeft className='mt-1' />  <span>Back to Courses</span></span></button>
+                    <button className="outline outline-offset-2 hover:outline-offset-1 outline-cyan-500 hover:bg-cyan-300 rounded-md px-8 py-1 font-semibold text-xl mr-6"><span className='flex justify-center gap-3 align-middle'><FaArrowLeft className='mt-1' />  <span>Back to Courses</span></span></button>
                 </Link>
                 <Link to={`/premium/${id}`}>
-                    <button className="outline outline-offset-2 hover:outline-offset-1 outline-cyan-500 hover:bg-cyan-300 rounded-md px-10 py-1 font-semibold text-xl ml-3"><span className='flex justify-center gap-3 align-middle'><FaCrown className='mt-1' />  <span>Get Premium</span></span></button>
+                    <button className="outline outline-offset-2 hover:outline-offset-1 outline-cyan-500 hover:bg-cyan-300 rounded-md px-10 py-1 font-semibold text-xl mt-6 ml-6"><span className='flex justify-center gap-3 align-middle'><FaCrown className='mt-1' />  <span>Get Premium</span></span></button>
                 </Link>
             </div>
         </div>
