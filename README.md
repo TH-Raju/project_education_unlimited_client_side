@@ -17,7 +17,7 @@
 # Used technologies 
 
 * React
-* React hooks and librarys
+* React hooks and libraries
 * Tailwind CSS
 * flowbite
 * Memba UI
