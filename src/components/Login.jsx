@@ -1,12 +1,18 @@
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useEffect } from 'react';
 import { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthProvider';
 
 const Login = () => {
-    const { user, signIn } = useContext(AuthContext);
+
+    const { user, signIn, googleProviderLogin, githubProviderLogin } = useContext(AuthContext);
     const [errors, setErrors] = useState('');
     const location = useLocation();
+    const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
 
     const navigates = useNavigate();
     const from = location.state?.from?.pathname || '/';
@@ -31,6 +37,23 @@ const Login = () => {
 
 
     }
+    const handleGoogleSignIn = () => {
+        googleProviderLogin(googleProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => console.error(error))
+    }
+
+    const handleGithubSignIn = () => {
+        githubProviderLogin(githubProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => console.error(error))
+    }
 
     useEffect(() => {
         if (user) {
@@ -50,7 +73,13 @@ const Login = () => {
                 </div>
                 <p className='py-4 my-3 px-3'>{errors}</p>
                 <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Log in</button>
+                <br />
+                <p className='mt-4'>Don't have Account? <Link to='/register' className='text-blue-900 font-bold underline'>Create Account</Link></p>
+                <button type="button" onClick={handleGoogleSignIn} className="px-14 py-3 flex align-middle gap-5 w-full mt-6 text-center font-semibold border rounded-xl border-blue-900 dark:border-gray-100 dark:text-gray-100 hover:bg-gray-300"><FcGoogle className='text-2xl'></FcGoogle> Log in with Google</button>
+
+                <button type="button" onClick={handleGithubSignIn} className="px-14 py-3 flex align-middle gap-5 w-full mt-6 text-center font-semibold border rounded-xl border-blue-900 dark:border-gray-100 dark:text-gray-100 hover:bg-gray-300"><FaGithub className='text-2xl'></FaGithub> Log in with Github</button>
             </form>
+
 
         </div>
     );
