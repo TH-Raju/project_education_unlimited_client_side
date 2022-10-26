@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 import logo from '../../image/education.png'
 import { FaUserAlt } from 'react-icons/fa';
-import { MdBrightnessHigh, MdNightlightRound } from "react-icons/md";
+import { MdNightlightRound } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
 
 
@@ -15,7 +15,8 @@ const Header = () => {
     const { user, logOut } = useContext(AuthContext);
 
     // console.log(user)
-    let [open, setOpen] = useState(true)
+    let [open, setOpen] = useState(true);
+    let [toggle, setToggle] = useState(true);
     let [errors, setError] = useState('');
 
     const handleLogOut = () => {
@@ -42,9 +43,9 @@ const Header = () => {
                                     </button>
                             }
                         </span>
-                        <button onClick={() => setOpen(!open)} type="button" className='ml-3'>
+                        <button onClick={() => setToggle(!toggle)} type="button" className='ml-3'>
                             {
-                                open ?
+                                toggle ?
                                     <>
                                         <div><MdNightlightRound />dark</div>
                                     </>
