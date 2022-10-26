@@ -3,6 +3,10 @@
 ## Education Unlimited
 Open [https://education-unlimited-7607f.web.app/] to view Live site in your browser.
 
+
+
+# Used technologies 
+
 * React
 * Tailwind CSS
 * flowbite
