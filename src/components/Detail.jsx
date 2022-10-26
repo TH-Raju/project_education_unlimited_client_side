@@ -5,7 +5,7 @@ import { FaCrown, FaArrowLeft } from 'react-icons/fa';
 const Detail = () => {
     const cours = useLoaderData();
     const { id, title, body, img, variable, condition, loop, functions } = cours;
-    console.log(cours);
+    // console.log(cours);
     return (
         <div className='lg:mx-32 md:mx-12'>
 

@@ -4,7 +4,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 const Course = () => {
     const cours = useLoaderData();
     const { id, title, body, img, variable, condition, loop, functions } = cours;
-    console.log(cours);
+    // console.log(cours);
     return (
         <div >
             <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{title} Tutorial</h1>
