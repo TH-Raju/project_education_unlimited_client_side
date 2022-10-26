@@ -7,7 +7,7 @@ const Blog = () => {
                 <div className="container grid grid-cols-12 mx-auto dark:bg-gray-900">
                     <div className="bg-no-repeat bg-cover dark:bg-gray-700 col-span-full lg:col-span-4" ></div>
                     <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
-                        <h1 className="text-3xl font-semibold">👉 what is cors?</h1>
+                        <h1 className="text-3xl font-semibold">👉 What is cors?</h1>
                         <p className="flex-1 pt-6">Cross-origin resource sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos.</p>
                         <div className="flex items-center justify-between pt-2">
                             <div className="flex space-x-2">
