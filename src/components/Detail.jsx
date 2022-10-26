@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { FaCrown, FaArrowLeft } from 'react-icons/fa';
+import Pdf from "react-to-pdf";
+
+const ref = React.createRef();
 
 const Detail = () => {
     const cours = useLoaderData();
@@ -12,52 +15,58 @@ const Detail = () => {
             <div className='flex justify-center items-center gap-5'>
                 <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{title} Tutorial</h1>
                 <div>
-                    <button type="button" className="px-8 py-3 font-semibold rounded-full bg-cyan-700 hover:bg-cyan-500 hover:text-black text-white dark:bg-gray-100 dark:text-gray-800">Download</button>
+                    <Pdf targetRef={ref} filename="code-example.pdf">
+                        {({ toPdf }) => <button type="button" onClick={toPdf} className="px-8 py-3 font-semibold rounded-full bg-cyan-700 hover:bg-cyan-500 hover:text-black text-white dark:bg-gray-100 dark:text-gray-800">Download</button>}
+                    </Pdf>
+
+
                 </div>
             </div>
+            <div ref={ref}>
 
-            <img src={img} alt="" className='w-full my-10 h-96 mx-auto rounded-lg' />
+                <img src={img} alt="" className='w-full my-10 h-96 mx-auto rounded-lg' />
 
-            <p className="px-4 mt-6 mb-12 text-lg">{body}</p>
+                <p className="px-4 mt-6 mb-12 text-lg">{body}</p>
 
-            {/* detail */}
+                {/* detail */}
 
-            {/* variable */}
-            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">-{title} {variable.v_name}</h2>
+                {/* variable */}
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">-{title} {variable.v_name}</h2>
 
-            <p className="px-4 mb-12 text-lg">{variable.v_desc}</p>
+                <p className="px-4 mb-12 text-lg">{variable.v_desc}</p>
 
-            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {variable.v_name} Syntax</h2>
+                <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {variable.v_name} Syntax</h2>
 
-            <p className="px-4 mb-12 text-lg">{variable.value}</p>
+                <p className="px-4 mb-12 text-lg">{variable.value}</p>
 
-            {/* condition */}
-            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {condition.v_name}</h2>
+                {/* condition */}
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {condition.v_name}</h2>
 
-            <p className="px-4 mb-12 text-lg">{condition.v_desc}</p>
+                <p className="px-4 mb-12 text-lg">{condition.v_desc}</p>
 
-            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {condition.v_name} Syntax</h2>
+                <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {condition.v_name} Syntax</h2>
 
-            <p className="px-4 mb-12 text-lg">{condition.value}</p>
+                <p className="px-4 mb-12 text-lg">{condition.value}</p>
 
-            {/* loop */}
-            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {loop.v_name}</h2>
+                {/* loop */}
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {loop.v_name}</h2>
 
-            <p className="px-4 mb-12 text-lg">{loop.v_desc}</p>
+                <p className="px-4 mb-12 text-lg">{loop.v_desc}</p>
 
-            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {loop.v_name} Syntax</h2>
+                <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {loop.v_name} Syntax</h2>
 
-            <p className="px-4 mb-12 text-lg">{loop.value}</p>
+                <p className="px-4 mb-12 text-lg">{loop.value}</p>
 
 
-            {/* function */}
-            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {functions.v_name}</h2>
+                {/* function */}
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {functions.v_name}</h2>
 
-            <p className="px-4 mb-12 text-lg">{functions.v_desc}</p>
+                <p className="px-4 mb-12 text-lg">{functions.v_desc}</p>
 
-            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {functions.v_name} Syntax</h2>
+                <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {functions.v_name} Syntax</h2>
 
-            <p className="px-4 mb-12 text-lg">{functions.value}</p>
+                <p className="px-4 mb-12 text-lg">{functions.value}</p>
+            </div>
 
 
 
