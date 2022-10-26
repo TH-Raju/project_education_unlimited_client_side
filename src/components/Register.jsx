@@ -2,22 +2,33 @@ import React, { useContext } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { AuthContext } from '../context/AuthProvider';
-import { GoogleAuthProvider } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { useState } from 'react';
 
 const Register = () => {
-    const { createUser, providerLogin } = useContext(AuthContext);
+    const { createUser, googleProviderLogin, githubProviderLogin } = useContext(AuthContext);
     const [errors, setErrors] = useState('');
     const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
 
     const handleGoogleSignIn = () => {
-        providerLogin(googleProvider)
+        googleProviderLogin(googleProvider)
             .then(result => {
                 const user = result.user;
                 console.log(user);
             })
             .catch(error => console.error(error))
     }
+
+    const handleGithubSignIn = () => {
+        githubProviderLogin(githubProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => console.error(error))
+    }
+
     const handleSubmit = event => {
         event.preventDefault();
         const form = event.target;
@@ -70,7 +81,7 @@ const Register = () => {
                 <br />
                 <button type="button" onClick={handleGoogleSignIn} className="px-14 py-3 flex align-middle gap-5 w-full mt-6 text-center font-semibold border rounded-xl border-blue-900 dark:border-gray-100 dark:text-gray-100 hover:bg-gray-300"><FcGoogle className='text-2xl'></FcGoogle> Sign in with Google</button>
 
-                <button type="button" className="px-14 py-3 flex align-middle gap-5 w-full mt-6 text-center font-semibold border rounded-xl border-blue-900 dark:border-gray-100 dark:text-gray-100 hover:bg-gray-300"><FaGithub className='text-2xl'></FaGithub> Sign in with Github</button>
+                <button type="button" onClick={handleGithubSignIn} className="px-14 py-3 flex align-middle gap-5 w-full mt-6 text-center font-semibold border rounded-xl border-blue-900 dark:border-gray-100 dark:text-gray-100 hover:bg-gray-300"><FaGithub className='text-2xl'></FaGithub> Sign in with Github</button>
 
 
             </form>
