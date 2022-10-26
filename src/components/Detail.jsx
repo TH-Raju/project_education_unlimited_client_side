@@ -9,7 +9,12 @@ const Detail = () => {
     return (
         <div className='lg:mx-32 md:mx-12'>
 
-            <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{title} Tutorial</h1>
+            <div className='flex justify-center items-center gap-5'>
+                <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{title} Tutorial</h1>
+                <div>
+                    <button type="button" className="px-8 py-3 font-semibold rounded-full bg-cyan-700 hover:bg-cyan-500 hover:text-black text-white dark:bg-gray-100 dark:text-gray-800">Download</button>
+                </div>
+            </div>
 
             <img src={img} alt="" className='w-full my-10 h-96 mx-auto rounded-lg' />
 
