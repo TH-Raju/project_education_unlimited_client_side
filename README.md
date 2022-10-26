@@ -3,11 +3,18 @@
 ## Education Unlimited
 Open [https://education-unlimited-7607f.web.app/] to view Live site in your browser.
 
+# Website's different features and functionality
+* This is a Learning platform. Where You can learn various types of programming languages.
+* There are different features of courses. Like free or premium. 
+* You can download and read the pdf file of course free of cost 
+* On our website, we use a login system. where you can log in with email or GitHub and also an email and password
+* Our website is responsive. You can read our course section or blog section on the mobile or tab and laptop or desktop. 
 
 
 # Used technologies 
 
 * React
+* React hooks and librarys
 * Tailwind CSS
 * flowbite
 * Memba UI
