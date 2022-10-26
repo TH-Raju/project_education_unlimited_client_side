@@ -16,14 +16,43 @@ const Detail = () => {
             <p className="px-4 mt-6 mb-12 text-lg">{body}</p>
 
             {/* detail */}
+
             {/* variable */}
-            <h2 className="text-4xl py-10 font-bold leading-none sm:text-5xl">- {variable.v_name}</h2>
+            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">-{title} {variable.v_name}</h2>
 
             <p className="px-4 mb-12 text-lg">{variable.v_desc}</p>
 
-            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {variable.v_name} Syntax</h2>
+            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {variable.v_name} Syntax</h2>
 
             <p className="px-4 mb-12 text-lg">{variable.value}</p>
+
+            {/* condition */}
+            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {condition.v_name}</h2>
+
+            <p className="px-4 mb-12 text-lg">{condition.v_desc}</p>
+
+            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {condition.v_name} Syntax</h2>
+
+            <p className="px-4 mb-12 text-lg">{condition.value}</p>
+
+            {/* loop */}
+            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {loop.v_name}</h2>
+
+            <p className="px-4 mb-12 text-lg">{loop.v_desc}</p>
+
+            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {loop.v_name} Syntax</h2>
+
+            <p className="px-4 mb-12 text-lg">{loop.value}</p>
+
+
+            {/* function */}
+            <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {title} {functions.v_name}</h2>
+
+            <p className="px-4 mb-12 text-lg">{functions.v_desc}</p>
+
+            <h2 className="text-4xl pb-10 font-bold leading-none sm:text-3xl">- {title} {functions.v_name} Syntax</h2>
+
+            <p className="px-4 mb-12 text-lg">{functions.value}</p>
 
 
 
