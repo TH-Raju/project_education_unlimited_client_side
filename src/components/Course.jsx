@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import Card from './Card';
 
 const Course = () => {
+    const [courses, setCourses] = useState([]);
     const cours = useLoaderData();
-    const { id, title, body, img, variable, condition, loop, functions } = cours;
+    const { id, name, body, img, variable, condition, loop, functions } = cours;
     // console.log(cours);
+
+    useEffect(() => {
+        fetch('https://education-unlimited-server-side.vercel.app/courses')
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    }, [])
+
+
     return (
         <div >
-            <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{title} Tutorial</h1>
+            <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{name} Tutorial</h1>
             {
                 body ?
                     <>
-                        <img src={img} alt="" className='w-full my-10 h-96 mx-auto rounded-xl' />
+                        <img src={img} alt="" className='w-90 my-10 h-96 mx-auto rounded-xl' />
                         <p className="px-4 mt-6 mb-12 text-lg">{body}</p>
                         <div className='grid grid-cols-2 gap-4 my-10'>
                             <Link to={`/detail/${id}`}>
@@ -44,12 +54,28 @@ const Course = () => {
                     </>
                     :
                     <>
-                        <p className='text-center text-blue-800'> <span className='text-3xl align-middle'>← </span> Select any Course first</p>
+                        <p className='text-center text-2xl text-blue-800'> <span className='text-4xl align-middle'>← </span> Select any Course</p>
+
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-6 md:ml-0'>
+                            {
+                                courses.map(course => <Card
+                                    key={course.id}
+                                    course={course}
+
+                                ></Card>
+
+                                )
+                            }
+                        </div>
                     </>
             }
 
         </div>
     );
+
 };
 
 export default Course;
+
+
+

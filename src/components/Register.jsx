@@ -81,10 +81,7 @@ const Register = () => {
                 <button type="button" onClick={handleGoogleSignIn} className="px-14 py-3 flex align-middle gap-5 w-full mt-6 text-center font-semibold border rounded-xl border-blue-900 dark:border-gray-100 dark:text-gray-100 hover:bg-gray-300"><FcGoogle className='text-2xl'></FcGoogle> Register with Google</button>
 
                 <button type="button" onClick={handleGithubSignIn} className="px-14 py-3 flex align-middle gap-5 w-full mt-6 text-center font-semibold border rounded-xl border-blue-900 dark:border-gray-100 dark:text-gray-100 hover:bg-gray-300"><FaGithub className='text-2xl'></FaGithub> Register with Github</button>
-
-
             </form>
-
 
         </div>
     );

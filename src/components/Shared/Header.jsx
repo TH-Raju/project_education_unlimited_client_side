@@ -8,9 +8,6 @@ import { CiDark } from "react-icons/ci";
 
 
 
-
-
-
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
 
@@ -106,7 +103,6 @@ const Header = () => {
                                         </li>
                                     </>
                             }
-
                             </>
                         </ul>
                     </div>
