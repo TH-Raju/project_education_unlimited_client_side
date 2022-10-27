@@ -60,6 +60,7 @@ const Login = () => {
             navigates(from, { replace: true })
         }
     }, [user])
+
     return (
         <div className='lg:mx-32 md:mx-10'>
             <form className='w-80 mx-auto' onSubmit={handleOnSubmit}>
