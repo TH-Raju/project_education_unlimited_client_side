@@ -5,7 +5,7 @@ import Courses from "../components/Courses";
 import Detail from "../components/Detail";
 import ErrorPage from "../components/ErrorPage";
 import FAQ from "../components/FAQ";
-import Home from "../components/Home";
+import Home from "../Home/Home";
 import Login from "../components/Login";
 import Premium from "../components/Premium";
 import PrivateRoute from "../components/PrivateRoute";

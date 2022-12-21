@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='lg:mx-32 md:mx-10' >
+        <div className='lg:mx-32 md:mx-10 ' >
             <div className="dark:bg-gray-800 dark:text-gray-50">
                 <div className="container grid grid-cols-12 mx-auto dark:bg-gray-900">
                     <div className="bg-no-repeat bg-cover dark:bg-gray-700 col-span-full lg:col-span-4" ></div>
