@@ -4,6 +4,11 @@ import { FaCrown, FaArrowLeft } from 'react-icons/fa';
 import Pdf from "react-to-pdf";
 
 const ref = React.createRef();
+const options = {
+    orientation: 'portrait',
+    unit: 'in',
+    format: [22, 15]
+};
 
 const Detail = () => {
     const cours = useLoaderData();
@@ -15,11 +20,9 @@ const Detail = () => {
             <div className='flex justify-center items-center gap-5'>
                 <h1 className="text-4xl text-center py-10 font-bold leading-none sm:text-5xl">{name} Tutorial</h1>
                 <div>
-                    <Pdf targetRef={ref} filename="code-example.pdf">
+                    <Pdf targetRef={ref} filename="code-example.pdf" options={options} x={.5} y={.5} scale={0.8}>
                         {({ toPdf }) => <button type="button" onClick={toPdf} className="px-8 py-3 font-semibold rounded-full bg-cyan-700 hover:bg-cyan-500 hover:text-black text-white dark:bg-gray-100 dark:text-gray-800">Download</button>}
                     </Pdf>
-
-
                 </div>
             </div>
 

@@ -27,7 +27,6 @@ const Login = () => {
 
         signIn(email, password)
             .then(result => {
-
                 form.reset();
             })
             .catch(error => {

@@ -31,10 +31,10 @@ const Review = () => {
                 <div className="flex justify-between p-4">
                     <div className="flex space-x-4">
                         <div>
-                            <img src={require("../image/student-1.png")} alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
+                            <img src={require("../image/Man.png")} alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
                         </div>
                         <div>
-                            <h4 className="font-bold">Raju khan</h4>
+                            <h4 className="font-bold">Raj khan</h4>
                             <span className="text-xs dark:text-gray-400">4 days ago</span>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const Review = () => {
                 <div className="flex justify-between p-4">
                     <div className="flex space-x-4">
                         <div>
-                            <img src={require("../image/student-3.png")} alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
+                            <img src={require("../image/ss.png")} alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
                         </div>
                         <div>
                             <h4 className="font-bold">Talaq Malhotra</h4>

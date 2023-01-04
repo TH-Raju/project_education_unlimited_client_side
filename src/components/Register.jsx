@@ -4,13 +4,14 @@ import { FaGithub } from "react-icons/fa";
 import { AuthContext } from '../context/AuthProvider';
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
-    const { createUser, googleProviderLogin, githubProviderLogin } = useContext(AuthContext);
+    const { setName, createUser, googleProviderLogin, githubProviderLogin } = useContext(AuthContext);
     const [errors, setErrors] = useState('');
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
+    const navigate = useNavigate();
 
     const handleGoogleSignIn = () => {
         googleProviderLogin(googleProvider)
@@ -35,15 +36,17 @@ const Register = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        // const name = form.name.value;
-        const confirm = form.confirm.value;
-        console.log(password, confirm);
+        // const fname = form.name.value;
+        // const confirm = form.confirm.value;
+        // console.log(password, confirm);
 
         createUser(email, password)
             .then(result => {
-                const user = result.user;
+                // const user = result.user;
                 form.reset();
-                console.log(user)
+                navigate('/home')
+                // setName(fname);
+                // console.log(user)
 
             })
             .catch(error => {
