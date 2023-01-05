@@ -9,7 +9,7 @@ import { CiDark } from "react-icons/ci";
 
 
 const Header = () => {
-    const { user, logOut, name } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
 
     // console.log(user)
     let [open, setOpen] = useState(true);

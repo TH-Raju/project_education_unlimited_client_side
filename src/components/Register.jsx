@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
-    const { setName, createUser, googleProviderLogin, githubProviderLogin } = useContext(AuthContext);
+    const { createUser, googleProviderLogin, githubProviderLogin } = useContext(AuthContext);
     const [errors, setErrors] = useState('');
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
@@ -45,7 +45,6 @@ const Register = () => {
                 // const user = result.user;
                 form.reset();
                 navigate('/home')
-                // setName(fname);
                 // console.log(user)
 
             })
