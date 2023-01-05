@@ -9,7 +9,7 @@ const Banner = () => {
                 <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
                     Get Our Courses
                 </h1>
-                <p className='text-[#00df9a] font-bold p-2'>
+                <p className='text-cyan-500 font-bold p-2'>
                     Learn More About Programming
                 </p>
                 <p className='md:text-2xl text-xl font-bold text-gray-900'>Learn the Best Technology with Us. Increase revenue for Desktop Laptop Mobile app platforms.</p>

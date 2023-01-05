@@ -38,12 +38,12 @@ const Summary = () => {
                 <h1 className=' underline underline-offset-8 text-black text-3xl text-center py-10 font-bold'>Contact With Us</h1>
                 <div className="grid w-full grid-cols-1 gap-8  py-16 mx-auto md:grid-cols-2 md:px-12  xl:px-32 pl-4 dark:bg-gray-800 dark:text-gray-100">
 
-                    <div className="flex flex-col justify-between">
-                        <div className="space-y-2">
+                    <div className="flex flex-col justify-around w-5/6 mx-auto">
+                        <div className="space-y-2 ml-16">
                             <h2 className="text-4xl text-black font-bold leading-tight lg:text-5xl">Let's talk!</h2>
                             <div className="dark:text-gray-400">You want to say us?</div>
                         </div>
-                        {/* <img src={img} alt="Contact our customer support" className="p-6 h-52 md:h-64 w-72" /> */}
+                        <img src={require('../image/contact.gif')} alt="Contact our customer support" className="-mt-10 -z-30 max-w-96 max-h-96  " />
                     </div>
                     <form noValidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
                         <div>

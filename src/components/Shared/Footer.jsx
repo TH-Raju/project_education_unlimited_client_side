@@ -8,7 +8,7 @@ const Footer = () => {
             <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <Link to='/home' className="flex items-center">
+                        <Link to='/home' className="flex items-center md:mr-7">
                             <img src={require('../../image/education.png')} className="mr-3 h-8" alt="Education Unlimited Logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Education Unlimited</span>
                         </Link>
