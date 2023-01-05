@@ -39,7 +39,7 @@ const WeAre = () => {
                 <div className='text-center mt-6'>
                     <img className="p-1 w-52 h-52 rounded-full ring-2 ring-cyan-400 dark:ring-gray-500" src={require('../image/student-5.png')} alt="Bordered avatar" />
                     <p className='font-bold mt-4 text-xl'>Abdullah Mahmud</p>
-                    <p>Student Executive</p>
+                    <p>Team Executive</p>
                 </div>
             </div>
 
