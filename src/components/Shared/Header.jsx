@@ -86,7 +86,7 @@ const Header = () => {
                                 user?.uid ?
                                     <>
                                         <li>
-                                            <Link onClick={handleLogOut} className="block lg:text-base  py-2 pr-4 pl-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Log Out</Link>
+                                            <Link onClick={handleLogOut} className="bg-cyan-700 px-3 py-2 text-white rounded-lg" >Log out</Link>
                                         </li>
                                         <li>
                                             <Link className="inline py-2 pr-4 pl-3 text-blue-700 rounded hover:bg-gray-100 md:hidden lg:block sm:block md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{user?.uid ? user.displayName
