@@ -41,7 +41,7 @@ const Summary = () => {
                     <div className="flex flex-col justify-around w-5/6 mx-auto">
                         <div className="space-y-2 ml-16">
                             <h2 className="text-4xl text-black font-bold leading-tight lg:text-5xl">Let's talk!</h2>
-                            <div className="dark:text-gray-400">You want to say us?</div>
+                            <div className="dark:text-gray-400">Do you want to say us?</div>
                         </div>
                         <img src={require('../image/contact.gif')} alt="Contact our customer support" className="-mt-10 -z-30 max-w-96 max-h-96  " />
                     </div>
