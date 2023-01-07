@@ -17,7 +17,7 @@ const LeftSide = () => {
         <div >
             <h1 className="text-3xl font-semibold bg-sky-300 text-center rounded-lg p-6">{courses.length} Course <p><small className='text-sm'>choose any course</small></p> </h1>
             <div>
-                <Link to='/courses'><p className="text-2xl font-semibold hover:bg-sky-200 rounded-lg p-3 m-4"> ALL </p></Link>
+
                 {
                     courses.map(course => <Link to={`course/${course.id}`} key={course.id}><p
                         className="text-2xl font-semibold hover:bg-sky-200 rounded-lg p-3 m-4">
