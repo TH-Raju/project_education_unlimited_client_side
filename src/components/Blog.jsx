@@ -7,6 +7,18 @@ const Blog = () => {
                 <div className="container grid grid-cols-12 mx-auto dark:bg-gray-900">
                     <div className="bg-no-repeat bg-cover dark:bg-gray-700 col-span-full lg:col-span-4" ></div>
                     <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
+                        <h1 className="text-3xl font-semibold">👉 What is react? and Why to use react?</h1>
+                        <p className="flex-1 pt-6">React is a JavaScript library developed by Facebook which, among other things, was used to build Instagram.com. and also React is a front-end JavaScript library. React is capable of making API calls (sending the request to the backend), which deal with the data. React cannot process the database or the data source itself. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React. js is virtual DOM. React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
+                        <div className="flex items-center justify-between pt-2">
+                            <div className="flex space-x-2">
+                            </div>
+                            <span className="text-xs">2 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="container grid grid-cols-12 mx-auto dark:bg-gray-900">
+                    <div className="bg-no-repeat bg-cover dark:bg-gray-700 col-span-full lg:col-span-4" ></div>
+                    <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
                         <h1 className="text-3xl font-semibold">👉 What is cors?</h1>
                         <p className="flex-1 pt-6">Cross-origin resource sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos.</p>
                         <div className="flex items-center justify-between pt-2">
