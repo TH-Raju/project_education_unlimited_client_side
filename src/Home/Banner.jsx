@@ -11,7 +11,7 @@ const Banner = () => {
                 <p className='text-cyan-500 font-bold p-2'>
                     Learn More About Programming
                 </p>
-                <p className='md:text-2xl text-xl font-bold text-gray-900'>Learn the Best Technology with Us. Increase revenue for Desktop Laptop Mobile app platforms.</p>
+                <p className='md:text-2xl text-xl font-bold text-gray-900'>Learn the Best Programming Language with Us. Increase revenue for Desktop Web Mobile app platforms.</p>
                 <Link to='/courses'> <button className='bg-cyan-500 w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-gray-800'>Get Started</button></Link>
             </div>
         </div>
