@@ -17,29 +17,29 @@ const WeAre = () => {
                 <div className='text-center mt-6'>
                     <img className="p-1 w-52 h-52 rounded-full ring-2 ring-cyan-400 dark:ring-gray-500" src={require('../image/student-1.png')} alt="Bordered avatar" />
                     <p className='font-bold mt-4 text-xl'>Mbk Mahmuda</p>
-                    <p>Team Coordinator</p>
+                    <p>Team Member</p>
                 </div>
                 <div className='text-center mt-6'>
                     <img className="p-1 w-52 h-52 rounded-full ring-2 ring-cyan-400 dark:ring-gray-500" src={require('../image/student-2.png')} alt="Bordered avatar" />
                     <p className='font-bold mt-4 text-xl'>Kaniz Fatema</p>
-                    <p>Team Manager</p>
+                    <p>Team Member</p>
                 </div>
 
                 <div className='text-center mt-6'>
                     <img className="p-1 w-52 h-52 rounded-full ring-2 ring-cyan-400 dark:ring-gray-500" src={require('../image/student-3.png')} alt="Bordered avatar" />
                     <p className='font-bold mt-4 text-xl'>Nazmun Nahar</p>
-                    <p>Team Administrator</p>
+                    <p>Team Member</p>
                 </div>
                 <div className='text-center mt-6'>
                     <img className="p-1 w-52 h-52 rounded-full ring-2 ring-cyan-400 dark:ring-gray-500" src={require('../image/student-4.png')} alt="Bordered avatar" />
                     <p className='font-bold mt-4 text-xl'>Marjan Bushra</p>
-                    <p>Content writer</p>
+                    <p>Content Member</p>
                 </div>
 
                 <div className='text-center mt-6'>
                     <img className="p-1 w-52 h-52 rounded-full ring-2 ring-cyan-400 dark:ring-gray-500" src={require('../image/student-5.png')} alt="Bordered avatar" />
                     <p className='font-bold mt-4 text-xl'>Abdullah Mahmud</p>
-                    <p>Team Executive</p>
+                    <p>Team Member</p>
                 </div>
             </div>
         </div>
