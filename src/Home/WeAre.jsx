@@ -42,8 +42,6 @@ const WeAre = () => {
                     <p>Team Executive</p>
                 </div>
             </div>
-
-
         </div>
     );
 };

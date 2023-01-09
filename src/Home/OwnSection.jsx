@@ -11,10 +11,7 @@ const OwnSection = () => {
                     </svg>
                     <p className="px-6 py-2 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:max-w-2xl xl:max-w-4xl text-black dark:text-gray-300">"Hello Learners, We Are Educational Unlimited Team, We Teach People For the last 10 years and We Trained Them The Best programming Languages. We are Here to Provide you best Programming Courses Ever"</p>
                     <div className="flex justify-center space-x-3">
-
-
                         <img src={img} alt="" className="w-20 h-20 bg-center bg-cover rounded-md  dark:bg-gray-700" />
-
                         <div>
                             <p className="leading-tight">TH Raju</p>
                             <p className="text-sm leading-tight dark:text-gray-300">Founder, <br /> Educational Unlimited</p>
