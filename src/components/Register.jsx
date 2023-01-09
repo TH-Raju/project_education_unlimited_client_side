@@ -36,8 +36,6 @@ const Register = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        // const fname = form.name.value;
-        // const confirm = form.confirm.value;
         // console.log(password, confirm);
 
         createUser(email, password)
@@ -52,7 +50,6 @@ const Register = () => {
                 console.log(error);
                 setErrors(error.message);
             });
-
     }
 
 
