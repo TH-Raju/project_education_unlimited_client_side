@@ -61,8 +61,8 @@ const Login = () => {
     }, [user])
 
     return (
-        <div className='lg:mx-32 md:mx-10'>
-            <form className='w-80 mx-auto' onSubmit={handleOnSubmit}>
+        <div className='lg:mx-32 md:mx-10 '>
+            <form className='w-80 mx-auto ' onSubmit={handleOnSubmit}>
                 <h1 className='text-4xl font-semibold text-center mb-10'>Log In</h1>
                 <div className="mb-6">
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
