@@ -50,15 +50,15 @@ const Summary = () => {
                     </div>
                     <form noValidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
                         <div>
-                            <label htmlFor="name" className="text-sm text-black">Full name</label>
+                            <label htmlFor="name" className="text-sm text-black font-bold">Full name</label>
                             <input id="name" type="text" placeholder="Your name" className="w-full p-3 rounded dark:bg-gray-800" />
                         </div>
                         <div>
-                            <label htmlFor="email" className="text-sm text-black">Email</label>
+                            <label htmlFor="email" className="text-sm text-black font-bold">Email</label>
                             <input id="email" type="email" placeholder="Your email" className="w-full p-3 rounded dark:bg-gray-800" />
                         </div>
                         <div>
-                            <label htmlFor="message" className="text-sm text-black">Message</label>
+                            <label htmlFor="message" className="text-sm text-black font-bold">Message</label>
                             <textarea id="message" rows="3" placeholder="Your message" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
                         </div>
                         <button type="submit" method="POST" action="mailto:rajukhan894200@gmail.com" encType="multipart/form-data" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-cyan-700 text-white">Send Message</button>
