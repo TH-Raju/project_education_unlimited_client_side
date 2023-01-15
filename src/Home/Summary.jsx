@@ -1,4 +1,5 @@
 import React from 'react';
+import Poster from './Poster';
 import Review from './Review';
 
 const Summary = () => {
@@ -32,6 +33,8 @@ const Summary = () => {
                     </div>
                 </div>
             </section>
+
+            <Poster></Poster>
             <Review></Review>
 
             <div className='text-black'>

@@ -11,7 +11,7 @@ const Card = ({ course }) => {
                     <img src={img} alt={name} className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
                     <div className="flex flex-col justify-between py-6 space-y-8">
                         <div className="space-y-2">
-                            <h2 className="text-3xl font-semibold tracking-wide">{title}</h2>
+                            <h2 className="text-3xl font-bold tracking-wide">{title}</h2>
                             <p className="dark:text-gray-200">{body.length > 150 ? body.slice(' ', 150) : body}...</p>
                         </div>
                         <p

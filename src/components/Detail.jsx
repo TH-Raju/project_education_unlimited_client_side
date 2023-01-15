@@ -35,7 +35,7 @@ const Detail = () => {
                 {/* detail */}
 
                 {/* variable */}
-                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">-{name} {variable.v_name}</h2>
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-sky-300  rounded-xl leading-none sm:text-5xl">-{name} {variable.v_name}</h2>
 
                 <p className="px-4 mb-12 text-lg">{variable.v_desc}</p>
 
@@ -44,7 +44,7 @@ const Detail = () => {
                 <p className="px-4 mb-12 text-lg">{variable.value}</p>
 
                 {/* condition */}
-                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {name} {condition.v_name}</h2>
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-sky-300 rounded-xl leading-none sm:text-5xl">- {name} {condition.v_name}</h2>
 
                 <p className="px-4 mb-12 text-lg">{condition.v_desc}</p>
 
@@ -53,7 +53,7 @@ const Detail = () => {
                 <p className="px-4 mb-12 text-lg">{condition.value}</p>
 
                 {/* loop */}
-                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {name} {loop.v_name}</h2>
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-sky-300 rounded-xl leading-none sm:text-5xl">- {name} {loop.v_name}</h2>
 
                 <p className="px-4 mb-12 text-lg">{loop.v_desc}</p>
 
@@ -63,7 +63,7 @@ const Detail = () => {
 
 
                 {/* function */}
-                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-gray-500 rounded-xl leading-none sm:text-5xl">- {name} {functions.v_name}</h2>
+                <h2 className="text-4xl py-10 px-5 mb-8 font-bold bg-sky-300 rounded-xl leading-none sm:text-5xl">- {name} {functions.v_name}</h2>
 
                 <p className="px-4 mb-12 text-lg">{functions.v_desc}</p>
 
