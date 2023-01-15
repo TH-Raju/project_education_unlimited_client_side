@@ -28,7 +28,7 @@ const Header = () => {
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <Link to="/home" className="flex items-center">
                         <img src={logo} className="mr-3 h-12 md:h-10 sm:h-8" alt="Education Unlimited" />
-                        <span className="self-center md:text-xl sm:text-sm font-semibold whitespace-nowrap dark:text-white">Education Unlimited</span>
+                        <span className="self-center md:text-xl sm:text-sm font-bold whitespace-nowrap dark:text-white">Education Unlimited</span>
                     </Link>
                     <div className="flex md:order-2">
                         <span>
